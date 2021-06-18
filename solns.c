@@ -34,19 +34,20 @@ float average(int a[],int num)
 
 //Mode//
 int mode(int a[],int num){
-  modeno,moden=0,mode;
-  for(int i=0;i<num;i++){
-    modeno =0;
-    for(int j=0;j<num;j++){
+  int i,j,modenum,moden=0,mode;
+  for(i=0;i<num;i++){
+    modenum =0;
+    for(j=0;j<num;j++){
       if(a[i] ==a[j])
-        modeno++;
+        modenum++;
     }
-    if(moden<modeno)
+    if(moden<modenum)
       mode =a[i];
-    moden=modeno;  
+    moden=modenum;  
     }
     return(mode);
 }
+
 
 //Factors//
 int factors(int num,int a[]){
