@@ -1,7 +1,7 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
 
-//Maximum//
+/*Maximum*/
 int max(int a[],int num){
   max= 0;
   for (int i=0;i<num;i++){
@@ -11,7 +11,7 @@ int max(int a[],int num){
   return max;
 }
 
-//Minimum//
+/*Minimum*/
 int min(int a[],int num){
   min=a[i];
   for(int i=0;i<num;i++){
@@ -22,7 +22,7 @@ int min(int a[],int num){
 }
 
 
-//Average//
+/*Average*/
 float average(int a[],int num)
 {
   sum=0;
@@ -32,7 +32,7 @@ float average(int a[],int num)
   return sum;
 }
 
-//Mode//
+/*Mode*/
 int mode(int a[],int num){
   int i,j,modenum,moden=0,mode;
   for(i=0;i<num;i++){
@@ -49,7 +49,7 @@ int mode(int a[],int num){
 }
 
 
-//Factors//
+/*Factors*/
 int factors(int num,int a[]){
   acc=0;
   for(int i=2;i<=num;i++){
