@@ -1,7 +1,7 @@
 /*Average*/
 
 float average(int a[],int num){
-  sum=0;
+  int sum=0;
   for (int i=0;i<num;i++)
       sum += a[i];
   sum=sum/num;
@@ -11,7 +11,7 @@ float average(int a[],int num){
 /*Maximum*/
 
 int max(int a[],int num){
-  max= 0;
+  int max= 0;
   for (int i=0;i<num;i++){
     if(max < a[i])
       max=a[i];
@@ -33,7 +33,7 @@ int min(int a[],int num){
 /*Mode*/
 
 int mode(int a[],int num){
-  modenum,moden=0,mode;
+  int modenum,moden=0,mode;
   for(int i=0;i<num;i++){
     modenum =0;
     for(int j=0;j<num;j++){
@@ -50,7 +50,7 @@ int mode(int a[],int num){
 /*Factors*/
 
 int factors(int num,int a[]){
-  acc=0;
+  int acc=0;
   for(int i=2;i<=num;i++){
       while(num%i==0){
         num=num/i;
